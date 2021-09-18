@@ -12,6 +12,15 @@ app.get("/", (req, res) => {
 app.get("/about", (req, res) => {
   res.render("about", { title: "About" });
 });
+app.get("/a", (req, res) => {
+  res.render("a", { title: "A" });
+});
+app.get("/b", (req, res) => {
+  res.render("b", { title: "B" });
+});
+app.get("/c", (req, res) => {
+  res.render("c", { title: "C" });
+});
 
 app.listen(2000, () => {
   console.log("connected on 2000");
